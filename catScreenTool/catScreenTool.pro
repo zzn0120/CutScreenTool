@@ -9,14 +9,16 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    canvas.cpp \
     main.cpp \
-    widget.cpp
+    screenpainter.cpp
 
 HEADERS += \
-    widget.h
+    canvas.h \
+    screenpainter.h
 
 FORMS += \
-    widget.ui
+    screenpainter.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
